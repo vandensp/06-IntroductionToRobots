@@ -2,11 +2,11 @@
 An opportunity to explore how to make an EV3 Robot move.
 
 Authors: Dave Fisher, David Mutchler, Vibha Alangar,
-their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+their colleagues, and Samuel VanDenburgh.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 # -----------------------------------------------------------------------------
-# TODO: 2.
+# Done: 2.
 #   Follow along with the lecture to run this program:
 #    - Using SSH from your computer
 #   When you have successfully run this program, change this _TODO_ to DONE.
@@ -35,6 +35,10 @@ def go_two_seconds():
     time.sleep(2)
     left_motor.brake()
 
+    right_motor = rb.LargeMotor(rb.Plug("C")) # Right Wheel
+    right_motor.start()
+    time.sleep(2)
+    right_motor.brake()
 
 def run_test_go_inches():
     """ Tests the go_inches function. """
